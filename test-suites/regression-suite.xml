@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Suite" >
+
+	<groups>
+		<run>
+			<exclude name="unsuccessful" />
+		</run>
+	</groups>
+	<test name="Regression Tests">
+		<classes>
+  			 <class name="com.herokuapp.test.CreateComputerTest" />
+    		<class name="com.herokuapp.test.ReadComputerTest" />
+ 			<class name="com.herokuapp.test.UpdateComputerTest" />
+			<class name="com.herokuapp.test.DeleteComputerTest" />
+		</classes>
+	</test>
+</suite>
